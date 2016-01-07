@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2kB-GM-0C7">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="DXp-zO-bkG">
+            <objects>
+                <navigationController id="2kB-GM-0C7" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sVB-54-RjK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="3xK-Ic-Q56" kind="relationship" relationship="rootViewController" id="wBn-6a-32j"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P2f-l3-Jpb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-685" y="-529"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="bqh-S0-hgx">
+            <objects>
+                <viewController id="3xK-Ic-Q56" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wmG-pd-RhH"/>
+                        <viewControllerLayoutGuide type="bottom" id="NCw-Jv-5R0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DLM-Q1-x1S">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBh-px-1sa">
+                                <rect key="frame" x="43" y="310" width="140" height="85"/>
+                                <state key="normal" title="next block"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="push" id="bCG-g2-S3N"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N9w-xT-Jrx">
+                                <rect key="frame" x="43" y="208" width="140" height="85"/>
+                                <state key="normal" title="next protocol"/>
+                                <connections>
+                                    <segue destination="4ap-Tu-Tlv" kind="push" id="v1h-fK-Tgu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Rla-rs-GqP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TEd-sh-b6O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="259" y="-574"/>
+        </scene>
+        <!--Protocol View Controller-->
+        <scene sceneID="0F8-fM-ddl">
+            <objects>
+                <viewController id="4ap-Tu-Tlv" customClass="ProtocolViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8DJ-3B-yWb"/>
+                        <viewControllerLayoutGuide type="bottom" id="GTC-kR-ElG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Inh-ic-bSE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zie-TR-lr8">
+                                <rect key="frame" x="71" y="189" width="163" height="64"/>
+                                <state key="normal" title="Hit"/>
+                                <connections>
+                                    <action selector="btnProtocolTest:" destination="4ap-Tu-Tlv" eventType="touchUpInside" id="2wR-Ph-c8W"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IME-hg-Uhr">
+                                <rect key="frame" x="71" y="95" width="163" height="64"/>
+                                <state key="normal" title="Hit 100"/>
+                                <connections>
+                                    <action selector="hit100:" destination="4ap-Tu-Tlv" eventType="touchUpInside" id="BKz-3O-QGF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="T8i-dP-lY7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gSJ-sM-2X3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1182" y="-569"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C8q-z0-qwz">
+                                <rect key="frame" x="90" y="305" width="163" height="64"/>
+                                <state key="normal" title="Hit"/>
+                                <connections>
+                                    <action selector="btnBlockTest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tti-Qd-iUP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ItW-aL-Fx6">
+                                <rect key="frame" x="90" y="211" width="163" height="64"/>
+                                <state key="normal" title="Hit 100"/>
+                                <connections>
+                                    <action selector="hit100:" destination="BYZ-38-t0r" eventType="touchUpInside" id="whO-gV-qpf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="pT8-Bg-aJR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="259" y="243"/>
+        </scene>
+    </scenes>
+</document>
